@@ -1,9 +1,4 @@
-﻿
-
-// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-
-
-while (true)
+﻿while (true)
 {
     Console.Write("Type task number(47, 50 or 52): ");
     string task = Console.ReadLine() ?? "0";
@@ -41,7 +36,7 @@ void Task50() // Задача 50. Напишите программу, кото�
     PrintArrayDouble(array);
     FindElementValue(array);
 }
-void Task52()
+void Task52() // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 {
     int columns = Convert.ToInt32(UserNumberInput("type number of columnes in array: "));
     int rows = Convert.ToInt32(UserNumberInput("type number of rows in array: "));
@@ -163,7 +158,7 @@ double[] ColumnAverage(int[,] arr)
         }
         averageArray[i] = Math.Round(averageArray[i] / row, 2);
     }
-    return averageArray; //averageArray[i] = Math.Round(averageArray[i] / col, 2)
+    return averageArray;
 }
 void Print1DArray(double[] arr)
 {
